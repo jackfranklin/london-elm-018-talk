@@ -11,6 +11,11 @@ double x =
 convertStringToYear str =
     String.toInt str
         |> Result.andThen (\x -> double x)
+        |> Debug.log "foo"
+        |> Result.andThen (\x -> double x)
+        |> Debug.log "bar"
+        |> Result.andThen (\x -> double x)
+        |> Result.andThen (\x -> double x)
 
 
 main =

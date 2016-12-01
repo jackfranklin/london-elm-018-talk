@@ -141,6 +141,7 @@ details =
   [ "elmplayground.com"
   , "javascriptplayground.com"
   , "@Jack_Franklin"
+  , "github.com/jackfranklin/london-elm-018-talk"
   ]
 ```
 

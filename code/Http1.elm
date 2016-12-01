@@ -26,12 +26,6 @@ getDogGif =
         Http.send NewGif (Http.get url decodeGifUrl)
 
 
-
--- Http with evancz/elm-http (deprecated with 0.18 and elm-lang/http)
--- Http.get decodeGifUrl url
---     |> Task.perform FetchError FetchSuccess
-
-
 decodeGifUrl : Decode.Decoder String
 decodeGifUrl =
     Decode.at [ "data", "image_url" ] Decode.string
